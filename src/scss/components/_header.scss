@@ -1,0 +1,32 @@
+.header {
+    // height: 100vh;
+    background-image: url("../img/lola-satchi-tjPgHiCb2G0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30rem;
+
+
+    &__content {
+        // position: absolute;
+        // top: 60%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        background-color: rgb(48, 47, 47, .8);
+        color: #fff;
+        padding: 3rem;
+        border-radius: 1rem;
+
+        h2 {
+            font-size: 6rem;
+        }
+
+        p {
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+    }
+}
