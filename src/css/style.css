@@ -128,7 +128,7 @@ body {
 .logo-img {
   height: 20rem;
   width: 40rem;
-  transition: all 1s;
+  transition: all 0.4s;
 }
 
 /* Links on mouse-over */
