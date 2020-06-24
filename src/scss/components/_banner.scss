@@ -1,0 +1,21 @@
+.banner {
+    padding: 10rem 10rem;
+    background-color: rgb(223, 223, 223);
+
+    p {
+        font-size: 3.5rem;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        transition: all .4s;
+    }
+
+    a:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}

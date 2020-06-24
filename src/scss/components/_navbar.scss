@@ -1,8 +1,9 @@
  /* Create a sticky/fixed navbar */
  #navbar {
     overflow: hidden;
+    background-color: rgba(255, 255, 255, .5);
     // background-color: rgba(0, 0, 0, .5);
-    background-color: #fff;
+    // background-color: #fff;
     // padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
@@ -42,6 +43,7 @@
       height: 20rem;
       width: 40rem;
       transition: all .4s;
+      // background-color: rgba(255, 255, 255, .5);
   }
   
   /* Links on mouse-over */
@@ -59,7 +61,7 @@
   /* Display some links to the right */
   #navbar-right {
     @media only screen and (max-width: 900px) {
-        display: none;
+        visibility: hidden;
         flex-direction: column;
     }
   }
@@ -80,10 +82,10 @@
   } 
 
   .hamburger {
-      display: none;
+      visibility: hidden;
 
       @media only screen and (max-width: 900px) {
-        display: block;
+        visibility: visible;
         position: absolute;
         right: 2rem;
     }

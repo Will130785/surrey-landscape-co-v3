@@ -13,14 +13,33 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.banner {
+  padding: 10rem 10rem;
+  background-color: #dfdfdf;
+}
+.banner p {
+  font-size: 3.5rem;
+}
+.banner a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+.banner a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.8), white), url("../img/alex-brisbey-WalgQ0AHdFM-unsplash.jpg");
-  background-size: cover;
+  background-color: #2a2829;
   margin-top: 15rem;
   padding: 3rem;
+  color: #fff;
 }
 @media only screen and (max-width: 700px) {
   .footer {
@@ -61,7 +80,7 @@ body {
 }
 
 .header {
-  background-image: url("../img/lola-satchi-tjPgHiCb2G0-unsplash.jpg");
+  background-image: url("../img/home-page.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -70,6 +89,9 @@ body {
   width: 100%;
   padding: 30rem;
 }
+.header__contact-about {
+  background-image: url("../img/contact-us.jpg");
+}
 .header__content {
   background-color: rgba(48, 47, 47, 0.8);
   color: #fff;
@@ -77,17 +99,21 @@ body {
   border-radius: 1rem;
 }
 .header__content h2 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 .header__content p {
   font-size: 2rem;
   margin: 2rem 0;
 }
+.header__content li {
+  list-style: none;
+  font-size: 3rem;
+}
 
 /* Create a sticky/fixed navbar */
 #navbar {
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   transition: 0.4s;
   /* Adds a transition effect when the padding is decreased */
   position: fixed;
@@ -136,7 +162,7 @@ body {
 /* Display some links to the right */
 @media only screen and (max-width: 900px) {
   #navbar-right {
-    display: none;
+    visibility: hidden;
     flex-direction: column;
   }
 }
@@ -159,11 +185,11 @@ body {
   }
 }
 .hamburger {
-  display: none;
+  visibility: hidden;
 }
 @media only screen and (max-width: 900px) {
   .hamburger {
-    display: block;
+    visibility: visible;
     position: absolute;
     right: 2rem;
   }
@@ -222,9 +248,14 @@ body {
 .services__header {
   text-align: center;
 }
-.services__wording {
-  text-align: center;
+.services section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: 5rem 0;
+}
+.services__img {
+  width: 100%;
+  height: 100%;
 }
 .services h2 {
   font-size: 3rem;
