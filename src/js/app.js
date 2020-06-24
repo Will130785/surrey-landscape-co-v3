@@ -2,18 +2,21 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    // document.getElementById("navbar").style.padding = "30px 10px";
-    document.getElementById("logo").style.fontSize = "25px";
-    document.querySelector(".logo-img").style.height = "10rem";
-    document.querySelector(".logo-img").style.width = "20rem";
-    document.getElementById("navbar").style.backgroundColor = "white";
-  } else {
-    // document.getElementById("navbar").style.padding = "80px 10px";
-    document.getElementById("logo").style.fontSize = "35px";
-    document.querySelector(".logo-img").style.height = "20rem";
-    document.querySelector(".logo-img").style.width = "40rem";
-    document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255, .5)";
+  if(window.innerWidth > 900) {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      // document.getElementById("navbar").style.padding = "30px 10px";
+      document.getElementById("logo").style.fontSize = "25px";
+      document.querySelector(".logo-img").style.height = "10rem";
+      document.querySelector(".logo-img").style.width = "20rem";
+      document.getElementById("navbar").style.backgroundColor = "white";
+    } else {
+      // document.getElementById("navbar").style.padding = "80px 10px";
+      document.getElementById("logo").style.fontSize = "35px";
+      document.querySelector(".logo-img").style.height = "20rem";
+      document.querySelector(".logo-img").style.width = "40rem";
+      document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255, .5)";
+    }
+
   }
 } 
 
@@ -43,9 +46,13 @@ window.addEventListener("resize", e => {
         document.getElementById("navbar-right").style.visibility = "visible";
         document.getElementById("navbar").style.height = "auto";
         document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255, .5)";
+        document.querySelector(".logo-img").style.height = "20rem";
+    document.querySelector(".logo-img").style.width = "40rem";
     } else {
       document.getElementById("navbar-right").style.display = "none";
       document.getElementById("navbar-right").style.visibility = "hidden";
       document.getElementById("navbar").style.backgroundColor = "white";
+      document.querySelector(".logo-img").style.height = "10rem";
+    document.querySelector(".logo-img").style.width = "20rem";
     }
 });

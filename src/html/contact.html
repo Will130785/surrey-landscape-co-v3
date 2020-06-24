@@ -43,12 +43,49 @@
     <header class="header header__contact-about">
         <section class="header__content">
             <h2>Get in contact with us today</h2>
+            <ul>
+                <li>James Gawman</li>
+                <li>07834 174 291</li>
+                <li>james@surreylandscapeco.com</li>
+                <li>admin@surreylandscapeco.com</li>
+            </ul>
         </section>
     </header>
 
     <!-- Main page content -->
     <main class="main">
-        
+        <section class="contact__form">
+            <form class="form" action="" method="POST" enctype="multipart/form-data">
+                <div class="form__header">
+                    <h2>Contact us</h2>
+                    <p>Get in contacting by completing the form</p>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lname" name="lname">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="phone" name="phone">
+                    <label for="phone">Telephone</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" cols="50" rows="10" placeholder="Describe works required">
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <input class="upload" type="file" id="upload" name="upload">
+                    <label for="upload">Upload picture of garden</label>
+                </div>
+            </form>
+        </section>
     </main>
 
     <!-- Footer Section -->
@@ -65,7 +102,7 @@
         </section>
 
         <!-- Footer nav links -->
-        <!-- <section class="footer__nav">
+        <section class="footer__nav">
             <ul>
                 <li>
                     <a href="src/html/about.html">About Us</a>
@@ -80,7 +117,7 @@
                     <a href="">Work</a>
                 </li>
             </ul>
-        </section> -->
+        </section>
 
         <!-- Footer logo -->
         <section class="footer__logo">
