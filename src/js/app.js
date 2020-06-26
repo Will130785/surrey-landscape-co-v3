@@ -56,3 +56,71 @@ window.addEventListener("resize", e => {
     document.querySelector(".logo-img").style.width = "20rem";
     }
 });
+
+//Services page dropdown functionallity
+const services = {
+  decking: document.getElementById("decking"),
+  fencing: document.getElementById("fencing"),
+  paving: document.getElementById("paving"),
+  wooden: document.getElementById("wooden"),
+  turfing: document.getElementById("turfing")
+};
+
+const serviceLinks = document.querySelectorAll(".service-link");
+
+serviceLinks.forEach(link => {
+  link.addEventListener("click", e => {
+    console.log(e.target);
+    if(e.target.classList.contains("decking-link")) {
+      services.decking.style.display = "grid";
+      services.fencing.style.display = "none";
+      services.paving.style.display = "none";
+      services.wooden.style.display = "none";
+      services.turfing.style.display = "none";
+
+      setTimeout(() => {
+        window.scrollBy(0, -150);
+      }, 20);
+    } else if(e.target.classList.contains("fencing-link")) {
+      services.decking.style.display = "none";
+      services.fencing.style.display = "grid";
+      services.paving.style.display = "none";
+      services.wooden.style.display = "none";
+      services.turfing.style.display = "none";
+
+      setTimeout(() => {
+        window.scrollBy(0, -150);
+      }, 20);
+    } else if(e.target.classList.contains("paving-link")) {
+      services.decking.style.display = "none";
+      services.fencing.style.display = "none";
+      services.paving.style.display = "grid";
+      services.wooden.style.display = "none";
+      services.turfing.style.display = "none";
+
+      setTimeout(() => {
+        window.scrollBy(0, -150);
+      }, 20);
+    } else if(e.target.classList.contains("wooden-link")) {
+      services.decking.style.display = "none";
+      services.fencing.style.display = "none";
+      services.paving.style.display = "none";
+      services.wooden.style.display = "grid";
+      services.turfing.style.display = "none";
+
+      setTimeout(() => {
+        window.scrollBy(0, -150);
+      }, 20);
+    } else if(e.target.classList.contains("turfing-link")) {
+      services.decking.style.display = "none";
+      services.fencing.style.display = "none";
+      services.paving.style.display = "none";
+      services.wooden.style.display = "none";
+      services.turfing.style.display = "grid";
+
+      setTimeout(() => {
+        window.scrollBy(0, -150);
+      }, 20);
+    }
+  });
+});
