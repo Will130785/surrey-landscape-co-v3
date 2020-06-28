@@ -71,56 +71,107 @@ const serviceLinks = document.querySelectorAll(".service-link");
 serviceLinks.forEach(link => {
   link.addEventListener("click", e => {
     console.log(e.target);
+    e.preventDefault();
     if(e.target.classList.contains("decking-link")) {
-      services.decking.style.display = "grid";
-      services.fencing.style.display = "none";
-      services.paving.style.display = "none";
-      services.wooden.style.display = "none";
-      services.turfing.style.display = "none";
+      services.decking.style.height = "50vh";
+      services.decking.style.width = "80vw";
+      services.decking.style.overflow = "scroll";
+      services.fencing.style.height = "0";
+      services.fencing.style.width = "0";
+      services.fencing.style.overflow = "hidden";
+      services.paving.style.height = "0";
+      services.paving.style.width = "0";
+      services.paving.style.overflow = "hidden";
+      services.wooden.style.height = "0";
+      services.wooden.style.width = "0";
+      services.wooden.style.overflow = "hidden";
+      services.turfing.style.height = "0";
+      services.turfing.style.width = "0";
+      services.turfing.style.overflow = "hidden";
 
-      setTimeout(() => {
-        window.scrollBy(0, -150);
-      }, 20);
+      // setTimeout(() => {
+      //   window.scrollBy(0, -150);
+      // }, 20);
     } else if(e.target.classList.contains("fencing-link")) {
-      services.decking.style.display = "none";
-      services.fencing.style.display = "grid";
-      services.paving.style.display = "none";
-      services.wooden.style.display = "none";
-      services.turfing.style.display = "none";
+      services.decking.style.height = "0";
+      services.decking.style.width = "0";
+      services.decking.style.overflow = "hidden";
+      services.fencing.style.height = "50vh";
+      services.fencing.style.width = "80vw";
+      services.fencing.style.overflow = "scroll";
+      services.paving.style.height = "0";
+      services.paving.style.width = "0";
+      services.paving.style.overflow = "hidden";
+      services.wooden.style.height = "0";
+      services.wooden.style.width = "0";
+      services.wooden.style.overflow = "hidden";
+      services.turfing.style.height = "0";
+      services.turfing.style.width = "0";
+      services.turfing.style.overflow = "hidden";
 
-      setTimeout(() => {
-        window.scrollBy(0, -150);
-      }, 20);
+      // setTimeout(() => {
+      //   window.scrollBy(0, -150);
+      // }, 20);
     } else if(e.target.classList.contains("paving-link")) {
-      services.decking.style.display = "none";
-      services.fencing.style.display = "none";
-      services.paving.style.display = "grid";
-      services.wooden.style.display = "none";
-      services.turfing.style.display = "none";
+      services.decking.style.height = "0";
+      services.decking.style.width = "0";
+      services.decking.style.overflow = "hidden";
+      services.fencing.style.height = "0";
+      services.fencing.style.width = "0";
+      services.fencing.style.overflow = "hidden";
+      services.paving.style.height = "50vh";
+      services.paving.style.width = "80vw";
+      services.paving.style.overflow = "scroll";
+      services.wooden.style.height = "0";
+      services.wooden.style.width = "0";
+      services.wooden.style.overflow = "hidden";
+      services.turfing.style.height = "0";
+      services.turfing.style.width = "0";
+      services.turfing.style.overflow = "hidden";
 
-      setTimeout(() => {
-        window.scrollBy(0, -150);
-      }, 20);
+      // setTimeout(() => {
+      //   window.scrollBy(0, -150);
+      // }, 20);
     } else if(e.target.classList.contains("wooden-link")) {
-      services.decking.style.display = "none";
-      services.fencing.style.display = "none";
-      services.paving.style.display = "none";
-      services.wooden.style.display = "grid";
-      services.turfing.style.display = "none";
+      services.decking.style.height = "0";
+      services.decking.style.width = "0";
+      services.decking.style.overflow = "hidden";
+      services.fencing.style.height = "0";
+      services.fencing.style.width = "0";
+      services.fencing.style.overflow = "hidden";
+      services.paving.style.height = "0";
+      services.paving.style.width = "0";
+      services.paving.style.overflow = "hidden";
+      services.wooden.style.height = "50vh";
+      services.wooden.style.width = "80vw";
+      services.wooden.style.overflow = "scroll";
+      services.turfing.style.height = "0";
+      services.turfing.style.width = "0";
+      services.turfing.style.overflow = "hidden";
 
-      setTimeout(() => {
-        window.scrollBy(0, -150);
-      }, 20);
+      // setTimeout(() => {
+      //   window.scrollBy(0, -150);
+      // }, 20);
     } else if(e.target.classList.contains("turfing-link")) {
-      services.decking.style.display = "none";
-      services.fencing.style.display = "none";
-      services.paving.style.display = "none";
-      services.wooden.style.display = "none";
-      services.turfing.style.display = "grid";
+      services.decking.style.height = "0";
+      services.decking.style.width = "0";
+      services.decking.style.overflow = "hidden";
+      services.fencing.style.height = "0";
+      services.fencing.style.width = "0";
+      services.fencing.style.overflow = "hidden";
+      services.paving.style.height = "0";
+      services.paving.style.width = "0";
+      services.paving.style.overflow = "hidden";
+      services.wooden.style.height = "0";
+      services.wooden.style.width = "0";
+      services.wooden.style.overflow = "hidden";
+      services.turfing.style.height = "50vh";
+      services.turfing.style.width = "80vw";
+      services.turfing.style.overflow = "scroll";
 
-      setTimeout(() => {
-        window.scrollBy(0, -150);
-      }, 20);
+      // setTimeout(() => {
+      //   window.scrollBy(0, -150);
+      // }, 20);
     }
   });
 });

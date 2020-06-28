@@ -493,9 +493,10 @@ body {
 }
 .services__header li {
   margin: 2rem 0;
+  transition: all 1s;
 }
 .services section {
-  display: none;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5rem;
   margin: 5rem 0;
@@ -543,6 +544,81 @@ body {
 
 .service-link:hover {
   transform: scale(1.2);
+}
+
+.decking {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
+}
+@media only screen and (max-width: 900px) {
+  .decking {
+    grid-template-columns: 100%;
+    grid-row-gap: 10rem;
+  }
+}
+
+.fencing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
+}
+@media only screen and (max-width: 900px) {
+  .fencing {
+    grid-template-columns: 100%;
+    grid-row-gap: 10rem;
+  }
+}
+
+.paving {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
+}
+@media only screen and (max-width: 900px) {
+  .paving {
+    grid-template-columns: 100%;
+    grid-row-gap: 10rem;
+  }
+}
+
+.wooden {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
+}
+@media only screen and (max-width: 900px) {
+  .wooden {
+    grid-template-columns: 100%;
+    grid-row-gap: 10rem;
+  }
+}
+
+.turfing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
+}
+@media only screen and (max-width: 900px) {
+  .turfing {
+    grid-template-columns: 100%;
+    grid-row-gap: 10rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
