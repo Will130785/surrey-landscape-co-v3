@@ -144,7 +144,7 @@
     grid-column-gap: 5rem;
     height: 0;
     overflow: hidden;
-    transition: height 1s ease-in-out;
+    transition: height 1s;
 
     @media only screen and (max-width: 900px) {
         grid-template-columns: 100%;
