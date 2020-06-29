@@ -491,15 +491,13 @@ body {
 .services__header {
   text-align: center;
 }
-.services__header li {
-  margin: 2rem 0;
-  transition: all 1s;
+.services__header a {
+  margin: 3rem 0;
 }
 .services section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5rem;
-  margin: 5rem 0;
 }
 @media only screen and (max-width: 900px) {
   .services section {
@@ -518,16 +516,16 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.services__wording p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
 .services h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
 .services h3 {
   font-size: 2.5rem;
-}
-.services p {
-  font-size: 2rem;
-  margin-bottom: 2rem;
 }
 .services li {
   font-size: 2rem;
@@ -612,7 +610,7 @@ body {
   grid-column-gap: 5rem;
   height: 0;
   overflow: hidden;
-  transition: height 1s;
+  transition: height 1s ease-in-out;
 }
 @media only screen and (max-width: 900px) {
   .turfing {
