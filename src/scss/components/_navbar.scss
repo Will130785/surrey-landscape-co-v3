@@ -48,6 +48,7 @@
       @media only screen and (max-width: 900px) {
         height: 10rem;
         width: 20rem;
+        margin: 0;
       }
   }
   
@@ -99,10 +100,15 @@
   .hamburger {
       visibility: hidden;
 
+      // span.bar {
+      //   border: 1px solid red;
+      // }
+
       @media only screen and (max-width: 900px) {
         visibility: visible;
         position: absolute;
         right: 2rem;
-        top: 4rem;
+        top: 3.5rem;
     }
+
   }

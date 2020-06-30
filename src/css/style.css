@@ -80,6 +80,7 @@ body {
 .banner a:hover {
   cursor: pointer;
   transform: scale(1.2);
+  margin-left: 1rem;
 }
 
 .footer {
@@ -285,6 +286,7 @@ body {
   .logo-img {
     height: 10rem;
     width: 20rem;
+    margin: 0;
   }
 }
 
@@ -317,7 +319,7 @@ body {
     visibility: visible;
     position: absolute;
     right: 2rem;
-    top: 4rem;
+    top: 3.5rem;
   }
 }
 
@@ -515,6 +517,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 2rem;
+  padding-right: 2rem;
+  border-right: 1px solid #fff;
+}
+@media only screen and (max-width: 900px) {
+  .services__wording {
+    margin-right: 0;
+    padding-right: 0;
+    border: none;
+  }
 }
 .services__wording p {
   font-size: 2rem;
@@ -547,7 +559,6 @@ body {
 .decking {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5rem;
   height: 0;
   overflow: hidden;
   transition: height 1s;
@@ -562,7 +573,6 @@ body {
 .fencing {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5rem;
   height: 0;
   overflow: hidden;
   transition: height 1s;
@@ -577,7 +587,6 @@ body {
 .paving {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5rem;
   height: 0;
   overflow: hidden;
   transition: height 1s;
@@ -592,7 +601,6 @@ body {
 .wooden {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5rem;
   height: 0;
   overflow: hidden;
   transition: height 1s;
@@ -607,10 +615,9 @@ body {
 .turfing {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5rem;
   height: 0;
   overflow: hidden;
-  transition: height 1s ease-in-out;
+  transition: height 1s;
 }
 @media only screen and (max-width: 900px) {
   .turfing {
