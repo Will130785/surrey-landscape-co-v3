@@ -243,3 +243,7 @@ header.addEventListener("click", e => {
     // }, 20);
   }
 });
+
+//Textarea clear
+const textarea = document.getElementById("message");
+textarea.value = "";

@@ -26,7 +26,7 @@
           <a href="/about.html">About Us</a>
           <a href="/services.html">Services</a>
           <a href="/contact.html">Contact</a>
-          <a href="#about">Works</a>
+          <!-- <a href="#about">Works</a> -->
         </div>
 
         <!-- Hamburger -->
@@ -42,55 +42,58 @@
     <!-- Header Section -->
     <header class="header header__contact-about">
         <section class="header__content">
-            <h2>Get in contact with us today</h2>
-            <ul>
-                <li>James Gawman</li>
-                <li>07834 174 291</li>
-                <li>james@surreylandscapeco.com</li>
-                <li>admin@surreylandscapeco.com</li>
-            </ul>
+            <section class="contact__form">
+                <form class="form" action="" method="POST" enctype="multipart/form-data">
+                    <div class="form__header">
+                        <h2>Contact us</h2>
+                        <p>Get in contacting by completing the form</p>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="fname" name="fname">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lname" name="lname">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="phone" name="phone">
+                        <label for="phone">Telephone</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" cols="60" rows="10" placeholder="Describe works required">
+                        </textarea>
+                    </div>
+                    <!-- <div class="form-group">
+                        <input class="upload" type="file" id="upload" name="upload">
+                        <label for="upload">Upload picture of garden</label>
+                    </div> -->
+                    <div class="form-group">
+                        <button id="submit" class="submit-btn">Submit</button>
+                    </div>
+    
+                    <section class="social-container social-container-form">
+                        <p>Find us on social media</p>
+                        <img class="social-icon social-icon-form" src="src/img/instagram-color.svg" alt="Instagram Logo" title="Instagram Logo">
+                        <img class="social-icon social-icon-form" src="src/img/facebook-round-line-color.svg" alt="Facebook Logo" title="Facebook Logo">
+                    </section>
+                </form>
+            </section>
         </section>
     </header>
 
     <!-- Main page content -->
     <main class="main">
-        <section class="contact__form">
-            <form class="form" action="" method="POST" enctype="multipart/form-data">
-                <div class="form__header">
-                    <h2>Contact us</h2>
-                    <p>Get in contacting by completing the form</p>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="fname" name="fname">
-                    <label for="fname">First Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="lname" name="lname">
-                    <label for="lname">Last Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email">
-                    <label for="email">Email</label>
-                </div>
-                <div class="form-group">
-                    <input type="number" id="phone" name="phone">
-                    <label for="phone">Telephone</label>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" cols="60" rows="10" placeholder="Describe works required">
-                    </textarea>
-                </div>
-                <div class="form-group">
-                    <input class="upload" type="file" id="upload" name="upload">
-                    <label for="upload">Upload picture of garden</label>
-                </div>
-
-                <section class="social-container social-container-form">
-                    <p>Find us on social media</p>
-                    <img class="social-icon social-icon-form" src="src/img/instagram-color.svg" alt="Instagram Logo" title="Instagram Logo">
-                    <img class="social-icon social-icon-form" src="src/img/facebook-round-line-color.svg" alt="Facebook Logo" title="Facebook Logo">
-                </section>
-            </form>
+        <section class="banner banner-contact">
+            <!-- <p>Get in contact with us today</p> -->
+            <p>James Gawman</p>
+            <p>07834 174 291</p>
+            <p>james@surreylandscapeco.com</p>
+            <p>admin@surreylandscapeco.com</p>
         </section>
     </main>
 
@@ -100,6 +103,9 @@
         <section class="footer__contact">
             <p>Surrey Landscape Co</p>
             <p>James Gawman</p>
+            <p>07834 174 291</p>
+            <p>james@surreylandscapeco.com</p>
+            <p>admin@surreylandscapeco.com</p>
             <section class="social-container">
                 <img class="social-icon" src="src/img/instagram-color.svg" alt="Instagram Logo" title="Instagram Logo">
                 <img class="social-icon" src="src/img/facebook-round-line-color.svg" alt="Facebook Logo" title="Facebook Logo">
@@ -119,11 +125,11 @@
                     <a href="/services.html">Services</a>
                 </li>
                 <li>
-                    <a href="/contact.html">Quote</a>
+                    <a href="/contact.html">Contact</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="">Work</a>
-                </li>
+                </li> -->
             </ul>
         </section>
 
