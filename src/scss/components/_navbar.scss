@@ -82,6 +82,11 @@
       font-size: 3rem;
       margin: 2rem 0;
     }
+
+    @media only screen and (max-height: 250px) {
+      font-size: 1.2rem;
+      padding: .5rem;
+    }
   }
 
   #navbar-right a:hover {
