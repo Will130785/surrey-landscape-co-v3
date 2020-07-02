@@ -76,6 +76,12 @@
   #navbar-right a {
     display: inline-block;
     transition: all .4s;
+
+    //Increase font size for mobile nav links
+    @media only screen and (max-width: 900px) {
+      font-size: 3rem;
+      margin: 2rem 0;
+    }
   }
 
   #navbar-right a:hover {

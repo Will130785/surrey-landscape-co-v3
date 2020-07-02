@@ -73,7 +73,7 @@
                         <label for="upload">Upload picture of garden</label>
                     </div> -->
                     <div class="form-group">
-                        <button id="submit" class="submit-btn">Submit</button>
+                        <input type="submit" id="submit" class="submit-btn" value="Submit">
                     </div>
     
                     <section class="social-container social-container-form">
@@ -143,5 +143,24 @@
 
     <!-- Scripts -->
     <script src="src/js/app.js"></script>
+    <!-- <script  type="text/javascript">
+        var frmvalidator = new Validator("myform");
+        frmvalidator.addValidation("fname","req","Please enter your First Name");
+        frmvalidator.addValidation("fname","maxlen=20",
+               "Max length for FirstName is 20");
+       
+        frmvalidator.addValidation("lname","req");
+        frmvalidator.addValidation("lname","maxlen=20");
+       
+        frmvalidator.addValidation("email","maxlen=50");
+        frmvalidator.addValidation("email","req");
+        frmvalidator.addValidation("email","email");
+       
+        frmvalidator.addValidation("phone","maxlen=50");
+        frmvalidator.addValidation("phone","numeric");
+       
+        frmvalidator.addValidation("message","req");
+       
+       </script> -->
 </body>
 </html>

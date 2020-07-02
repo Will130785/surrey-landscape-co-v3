@@ -325,6 +325,12 @@ body {
   display: inline-block;
   transition: all 0.4s;
 }
+@media only screen and (max-width: 900px) {
+  #navbar-right a {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+}
 
 #navbar-right a:hover {
   transform: scale(1.3);
@@ -532,6 +538,12 @@ body {
   border-radius: 1rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
+@media only screen and (max-width: 900px) {
+  .services__img {
+    height: 75%;
+    border-radius: 0.5rem;
+  }
+}
 .services__wording {
   display: flex;
   flex-direction: column;
@@ -588,6 +600,9 @@ body {
     grid-template-columns: 100%;
     grid-row-gap: 10rem;
   }
+  .decking p {
+    font-size: 2.5rem;
+  }
 }
 
 .fencing {
@@ -601,6 +616,9 @@ body {
   .fencing {
     grid-template-columns: 100%;
     grid-row-gap: 10rem;
+  }
+  .fencing p {
+    font-size: 2.5rem;
   }
 }
 
@@ -616,6 +634,9 @@ body {
     grid-template-columns: 100%;
     grid-row-gap: 10rem;
   }
+  .paving p {
+    font-size: 2.5rem;
+  }
 }
 
 .wooden {
@@ -630,6 +651,9 @@ body {
     grid-template-columns: 100%;
     grid-row-gap: 10rem;
   }
+  .wooden p {
+    font-size: 2.5rem;
+  }
 }
 
 .turfing {
@@ -643,6 +667,9 @@ body {
   .turfing {
     grid-template-columns: 100%;
     grid-row-gap: 10rem;
+  }
+  .turfing p {
+    font-size: 2.5rem;
   }
 }
 
