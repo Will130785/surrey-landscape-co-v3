@@ -40,7 +40,7 @@ hamburger.addEventListener("click", e => {
     if(hamburger.classList.contains("active")) {
         document.getElementById("navbar").style.height = "100vh";
         document.getElementById("navbar-right").style.display = "flex";
-        document.getElementById("navbar-right").style.visibility = "visible";
+        document.getElementById("navbar-right").style.visibility = "scroll";
     } else {
         document.getElementById("navbar").style.height = "auto";
         document.getElementById("navbar-right").style.display = "none";
