@@ -72,6 +72,9 @@ window.addEventListener("resize", e => {
         // services.paving.style.height = "60vh";
         // services.wooden.style.height = "60vh";
         // services.turfing.style.height = "60vh";
+    } else if(window.innerWidth < 900 && hamburger.classList.contains("active")) {
+      document.getElementById("navbar-right").style.display = "flex";
+      document.getElementById("navbar-right").style.visibility = "visible";
     } else {
       document.getElementById("navbar-right").style.display = "none";
       document.getElementById("navbar-right").style.visibility = "hidden";
