@@ -51,7 +51,8 @@
     &__wording {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-top: 5rem;
         margin-right: 2rem;
         padding-right: 2rem;
         border-right: 1px solid #fff;
